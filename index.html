@@ -1,226 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="smooth-scroll">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pocket M8 – UX Case Study</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PocketM8 – Case Study</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<aside class="toc">
-  <h3>Contents</h3>
-  <ul id="toc-list"></ul>
-</aside>
-
-<main class="content">
-
-  <!-- HERO -->
-  <section>
-    <h1>Pocket M8</h1>
-    <p class="subtitle">End-to-End UX Case Study · Sozial Digital</p>
-
-    <div class="meta">
-      <div><strong>Role:</strong> UX/UI Designer</div>
-      <div><strong>Project Type:</strong> Live Product · Client Redesign</div>
-      <div><strong>Platform:</strong> Web Application</div>
-      <div><strong>Timeline:</strong> Multi-phase (Discovery → Iteration → Validation)</div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-left">PocketM8</div>
+    <div class="nav-right">
+      <a href="#overview">Overview</a>
+      <a href="#problem">Problem</a>
+      <a href="#process">Process</a>
+      <a href="#screens">Screens</a>
+      <a href="#outcome">Outcome</a>
     </div>
-  </section>
+  </nav>
 
-  <!-- OVERVIEW -->
-  <section>
-    <h2>Project Overview</h2>
-    <p>
-      Pocket M8 is a digital social-support platform developed under Sozial Digital,
-      designed to help users manage tasks, events, and communication in a sensitive,
-      trust-driven context.
-    </p>
-    <p>
-      Although the product was already live, usability breakdowns, unclear flows,
-      and missing feedback states were impacting user confidence. My role was to
-      audit, redesign, and structurally improve the experience while respecting
-      real-world constraints.
-    </p>
-  </section>
+  <main>
 
-  <!-- PROBLEM -->
-  <section>
-    <h2>Problem Statement</h2>
-    <ul>
-      <li>Unclear onboarding and entry points</li>
-      <li>Confusing task vs event creation</li>
-      <li>Poor feedback states in messaging</li>
-      <li>No clarity when a contact became unavailable</li>
-      <li>Overloaded dashboards</li>
-      <li>Lack of emotional cues in sensitive interactions</li>
-    </ul>
-    <p>
-      These issues created hesitation, repeated failed actions, and reduced trust —
-      a critical risk for a social-support product.
-    </p>
-  </section>
+    <!-- COVER -->
+    <section class="full">
+      <img src="images/cover.png" alt="PocketM8 Cover">
+    </section>
 
-  <!-- GOALS -->
-  <section>
-    <h2>Goals & Success Criteria</h2>
-    <h3>Design Goals</h3>
-    <ul>
-      <li>Reduce cognitive load across key flows</li>
-      <li>Clarify similar actions (tasks vs events)</li>
-      <li>Improve system feedback and error states</li>
-      <li>Design with emotional clarity</li>
-      <li>Maintain simplicity while scaling features</li>
-    </ul>
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h1>Designing a Client–Social Worker Communication App</h1>
+      <p class="meta">
+        UX/UI Designer · Mobile App · Switzerland · German-speaking users
+      </p>
 
-    <h3>Success Indicators</h3>
-    <ul>
-      <li>Fewer user doubts during walkthroughs</li>
-      <li>Clear decision-making moments</li>
-      <li>Reduced need for explanation</li>
-      <li>Stakeholder approval</li>
-    </ul>
-  </section>
+      <p>
+        PocketM8 is a mobile application designed for clients of social workers to
+        communicate, receive tasks, manage events, and share files in a safe and
+        structured way.
+      </p>
 
-  <!-- DESIGN PROCESS -->
-  <section>
-    <h2>Design Process</h2>
-    <ol>
-      <li><strong>Audit & Discovery</strong> – Heuristic evaluation of the live product</li>
-      <li><strong>Problem Framing</strong> – Mapping friction points to user intent</li>
-      <li><strong>Information Architecture</strong> – Reducing clutter and grouping actions</li>
-      <li><strong>User Flow Redesign</strong> – Eliminating ambiguity and dead ends</li>
-      <li><strong>UX Writing & Microcopy</strong> – Human, calm, supportive language</li>
-      <li><strong>Validation & Iteration</strong> – Scenario testing and client walkthroughs</li>
-    </ol>
-    <p>
-      The process was iterative and constraint-aware, focusing on realistic improvements
-      rather than idealized redesigns.
-    </p>
-  </section>
+      <p>
+        The project focused on redesigning an existing app to improve usability,
+        reduce confusion, and support users with varying levels of digital literacy.
+      </p>
+    </section>
 
-  <!-- RESEARCH -->
-  <section>
-    <h2>Research & Discovery</h2>
+    <!-- PROBLEM -->
+    <section id="problem">
+      <h2>Problem Statement</h2>
+      <p>
+        While the app functioned well technically, real-world usage revealed
+        usability gaps including role confusion, unclear task states, inconsistent
+        interactions, and dense layouts.
+      </p>
+      <img src="images/problem.png" alt="Problem highlights">
+    </section>
 
-    <h3>Existing Product Audit</h3>
-    <ul>
-      <li>Navigation clarity</li>
-      <li>Content hierarchy</li>
-      <li>Feedback visibility</li>
-      <li>Error handling</li>
-      <li>Accessibility basics</li>
-    </ul>
+    <!-- USERS -->
+    <section>
+      <h2>Users & Context</h2>
+      <p>
+        The primary users are clients working with social workers in Switzerland.
+        Many interact with the app under stress, making clarity and predictability
+        critical.
+      </p>
+      <img src="images/users.png" alt="User context">
+    </section>
 
-    <h3>Stakeholder Inputs</h3>
-    <ul>
-      <li>Real user complaints</li>
-      <li>Technical constraints</li>
-      <li>Non-removable features</li>
-      <li>Long-term vision</li>
-    </ul>
+    <!-- RESEARCH -->
+    <section>
+      <h2>Research & Discovery</h2>
+      <p>
+        Rather than theoretical research, the project relied on hands-on usability
+        testing using real flows and live app behavior.
+      </p>
+      <img src="images/research.png" alt="Research artifacts">
+    </section>
 
-    <h3>User Behavior Signals</h3>
-    <ul>
-      <li>Live product testing</li>
-      <li>Edge-case exploration</li>
-      <li>Scenario-based walkthroughs</li>
-    </ul>
-  </section>
+    <!-- TESTING -->
+    <section>
+      <h2>Usability Testing</h2>
+      <p>
+        Testing covered authentication, messaging, tasks, events, file handling,
+        and profile management across both client and social worker roles.
+      </p>
+      <img src="images/testing.png" alt="Testing flows">
+    </section>
 
-  <!-- CHALLENGES -->
-  <section>
-    <h2>Key UX Challenges</h2>
-    <ul>
-      <li><strong>Ambiguous Creation Flow</strong> — Tasks and events lacked distinction</li>
-      <li><strong>Messaging Failures</strong> — No feedback when contact unavailable</li>
-      <li><strong>Dashboard Overload</strong> — Competing elements with no hierarchy</li>
-      <li><strong>Emotional Disconnect</strong> — Cold system responses</li>
-    </ul>
-  </section>
+    <!-- PROCESS -->
+    <section id="process">
+      <h2>Design Process</h2>
+      <p>
+        The process followed three phases: testing and documentation, refinement
+        and redesign, and structured feedback leading to a developer-ready handoff.
+      </p>
+      <img src="images/process.png" alt="Design process timeline">
+    </section>
 
-  <!-- DESIGN DECISIONS -->
-  <section>
-    <h2>Key Design Decisions</h2>
+    <!-- SCREENS -->
+    <section id="screens">
+      <h2>Key Screens</h2>
 
-    <h3>Task vs Event Separation</h3>
-    <p>
-      Tasks and events were explicitly separated with contextual descriptions to
-      help users understand consequences before proceeding.
-    </p>
+      <h3>Authentication</h3>
+      <img src="images/login.png" alt="Login screens">
 
-    <h3>Messaging Unavailable State</h3>
-    <ul>
-      <li>Disabled input field</li>
-      <li>Clear explanatory message</li>
-      <li>Visual icon reinforcement</li>
-    </ul>
+      <h3>Chat & Communication</h3>
+      <img src="images/chat.png" alt="Chat screens">
 
-    <h3>Magic Link Login</h3>
-    <p>
-      Introduced phone-number-based magic links with clear explanations to reduce
-      anxiety for non-technical users.
-    </p>
-  </section>
+      <h3>Tasks & Events</h3>
+      <img src="images/tasks.png" alt="Task flow screens">
 
-  <!-- VISUAL -->
-  <section>
-    <h2>Visual Design</h2>
-    <ul>
-      <li>Clean layouts</li>
-      <li>Soft contrast</li>
-      <li>Clear typography</li>
-      <li>Familiar patterns</li>
-    </ul>
-    <p>
-      The interface prioritizes readability, accessibility, and calmness over visual noise.
-    </p>
-  </section>
+      <h3>Files</h3>
+      <img src="images/files.png" alt="File management screens">
 
-  <!-- OUTCOMES -->
-  <section>
-    <h2>Outcomes & Impact</h2>
-    <ul>
-      <li>Improved clarity across workflows</li>
-      <li>Reduced user confusion</li>
-      <li>Stronger emotional alignment</li>
-      <li>High client satisfaction</li>
-    </ul>
-  </section>
+      <h3>Profile</h3>
+      <img src="images/profile.png" alt="Profile screen">
+    </section>
 
-  <!-- LEARNINGS -->
-  <section>
-    <h2>Learnings</h2>
-    <ul>
-      <li>UX in sensitive domains requires emotional intelligence</li>
-      <li>Silent failures damage trust</li>
-      <li>Microcopy prevents support tickets</li>
-      <li>Constraints improve realism</li>
-    </ul>
-  </section>
+    <!-- OUTCOME -->
+    <section id="outcome">
+      <h2>Outcome & Impact</h2>
+      <ul>
+        <li>Improved clarity across all task and event states</li>
+        <li>Reduced user confusion in login flows</li>
+        <li>More predictable and accessible interactions</li>
+        <li>Cleaner UI aligned with real user behavior</li>
+      </ul>
+    </section>
 
-  <!-- FUTURE -->
-  <section>
-    <h2>Future Improvements</h2>
-    <ul>
-      <li>Formal usability testing</li>
-      <li>Accessibility audits</li>
-      <li>UX metrics</li>
-      <li>Design system documentation</li>
-    </ul>
-  </section>
+  </main>
 
-  <!-- FINAL NOTE -->
-  <section>
-    <h2>Final Note</h2>
-    <p>
-      This project strengthened my ability to design responsibly for real users,
-      collaborate with stakeholders, and work effectively on live products under constraints.
-    </p>
-  </section>
+  <footer>
+    <p>© Saniya Ankalgi — Product Designer</p>
+  </footer>
 
-</main>
-
-<script src="script.js"></script>
 </body>
 </html>
