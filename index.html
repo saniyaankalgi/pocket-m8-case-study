@@ -14,6 +14,7 @@
   <div class="nav-right">
     <a href="#overview">Overview</a>
     <a href="#problem">Problem</a>
+    <a href="#users">Users</a>
     <a href="#research">Research</a>
     <a href="#process">Process</a>
     <a href="#screens">Screens</a>
@@ -23,13 +24,14 @@
 
 <main>
 
+<!-- COVER -->
 <section class="full">
-  <img src="images/cover.png" alt="PocketM8 cover">
+  <img src="images/cover.png" alt="PocketM8 cover image">
 </section>
 
+<!-- OVERVIEW -->
 <section id="overview">
-  <h1>Designing a Client–Social Worker Communication App</h1>
-  <p class="meta">UX/UI Designer · Mobile App · Switzerland · German-speaking users</p>
+  <h1>Designing a Client–Social Worker Communication App for a Switzerland-Based Organization</h1>
 
   <p>
     PocketM8 is a mobile application designed for clients of social workers to communicate,
@@ -37,153 +39,215 @@
   </p>
 
   <p>
-    The product is owned by Sozial Digital, a Switzerland-based organization serving
-    German-speaking users.
+    The product is owned by Sozial Digital, a Switzerland-based company serving German-speaking users.
+  </p>
+
+  <p>
+    The project involved redesigning and refining an existing app, improving usability,
+    reducing confusion, and making the experience intuitive for users with varying levels
+    of digital literacy.
   </p>
 
   <ul>
-    <li><strong>Role:</strong> UX/UI Designer</li>
-    <li><strong>Duration:</strong> Initial design + 5-day usability & iteration cycle</li>
-    <li><strong>Platform:</strong> Mobile App (Client side)</li>
-    <li><strong>Target Users:</strong> Clients of social workers</li>
+    <li><strong>My Role:</strong> UX/UI Designer</li>
+    <li><strong>Duration:</strong> Initial Design + 5-day Usability & Iteration Cycle</li>
+    <li><strong>Platform:</strong> Mobile App (Client Side)</li>
+    <li><strong>Target Users:</strong> Clients of social workers (German speaking, Switzerland)</li>
   </ul>
 </section>
 
+<!-- PROBLEM -->
 <section id="problem">
   <h2>Problem Statement</h2>
 
   <p>
-    The existing PocketM8 app functioned well technically, but real-world usage revealed
-    several usability gaps.
+    The existing PocketM8 app functioned well technically, but usability gaps became evident
+    after real-world usage:
   </p>
 
   <ul>
-    <li>Multiple login methods caused role confusion</li>
+    <li>Multiple login methods caused role confusion (clients vs mentors)</li>
     <li>Task and event states were not visually clear</li>
-    <li>File interactions lacked clarity</li>
-    <li>Inconsistent long-press interactions</li>
-    <li>Dense layouts reduced readability</li>
+    <li>File interactions lacked clarity (download behavior)</li>
+    <li>Interaction patterns (long press actions, confirmations) were inconsistent</li>
+    <li>Dense layouts reduced readability for non tech-savvy users</li>
   </ul>
 
   <p>
-    Since users often interact with the app under stress, clarity and predictability were critical.
+    Because the app is used by clients who may already be under cognitive or emotional load,
+    clarity and predictability were critical.
   </p>
 
   <img src="images/problem.png" alt="Problem highlights">
 </section>
 
-<section>
+<!-- USERS -->
+<section id="users">
   <h2>Users & Context</h2>
 
-  <p>
-    The primary users are clients working with social workers in Switzerland, with mixed
-    levels of digital literacy.
-  </p>
+  <h3>Target Audience</h3>
+  <ul>
+    <li>Clients working with social workers</li>
+    <li>German speaking users</li>
+    <li>Mixed digital literacy levels</li>
+    <li>Often interacting with tasks related to health, administration, or daily life</li>
+  </ul>
 
+  <h3>Usage Context</h3>
   <ul>
     <li>High importance of clarity and trust</li>
     <li>Users may open the app under stress</li>
-    <li>Actions must feel safe and reversible</li>
+    <li>Actions like accepting or rejecting tasks must feel safe and reversible</li>
   </ul>
 
-  <img src="images/users.png" alt="User context">
+  <img src="images/users.png" alt="User context visual">
 </section>
 
+<!-- RESEARCH -->
 <section id="research">
   <h2>Research & Discovery</h2>
 
-  <p>
-    This project relied on hands-on usability testing rather than theoretical research.
-  </p>
-
+  <h3>Sources of Insight</h3>
   <ul>
-    <li>Review of existing wireframes</li>
-    <li>Live app behavior testing</li>
-    <li>Product team feedback</li>
-    <li>Real usage observation</li>
+    <li>Existing wireframes and rough specifications</li>
+    <li>Review of live app behavior</li>
+    <li>Hands-on testing using real flows</li>
+    <li>Direct feedback from the product team</li>
+    <li>Observations from real usage scenarios</li>
   </ul>
+
+  <p>
+    Rather than theoretical research, this project relied on practical usability testing,
+    which was crucial given the sensitivity of the user base.
+  </p>
 
   <img src="images/research.png" alt="Research artifacts">
 </section>
 
+<!-- TESTING -->
 <section>
-  <h2>Usability Testing</h2>
+  <h2>Usability Testing (Live App)</h2>
 
+  <p>I tested the live production app by simulating both roles:</p>
   <ul>
-    <li>SMS login</li>
-    <li>Email & magic link login</li>
-    <li>Messaging</li>
-    <li>Tasks & events</li>
-    <li>File upload & download</li>
-    <li>Profile editing</li>
+    <li>Social worker (web app)</li>
+    <li>Client (mobile app)</li>
   </ul>
 
-  <img src="images/testing.png" alt="Testing flows">
+  <h3>Tested Flows</h3>
+  <ul>
+    <li>SMS login</li>
+    <li>Email login</li>
+    <li>Magic link login</li>
+    <li>Messaging</li>
+    <li>Tasks & events (accept, reject, complete)</li>
+    <li>File upload / download</li>
+    <li>Profile & avatar editing</li>
+  </ul>
+
+  <p>
+    This revealed real interaction friction that could not be identified in wireframes alone.
+  </p>
+
+  <img src="images/testing.png" alt="Testing flow">
 </section>
 
+<!-- PROCESS -->
 <section id="process">
+  <h2>Design Principles Applied</h2>
+  <ul>
+    <li>Clarity over cleverness</li>
+    <li>One action = one outcome</li>
+    <li>Consistent interaction patterns</li>
+    <li>Low cognitive load</li>
+    <li>Accessible visual hierarchy</li>
+  </ul>
+
   <h2>Design Process</h2>
 
   <h3>Step 1: Testing & Documentation</h3>
   <ul>
     <li>Tested all major flows</li>
-    <li>Documented friction points</li>
+    <li>Documented friction points directly in Figma</li>
+    <li>Flagged UX vs technical issues</li>
   </ul>
 
   <h3>Step 2: Refinement & Redesign</h3>
   <ul>
-    <li>Improved layouts and spacing</li>
-    <li>Introduced consistent patterns</li>
-    <li>Reduced ambiguity</li>
+    <li>Improved layouts, spacing, and alignment</li>
+    <li>Introduced consistent card patterns</li>
+    <li>Refined micro interactions</li>
+    <li>Reduced ambiguity in states and actions</li>
   </ul>
 
   <h3>Step 3: Feedback & Iteration</h3>
   <ul>
-    <li>Two rounds of feedback</li>
-    <li>Developer-ready handoff</li>
+    <li>Two rounds of structured feedback</li>
+    <li>Adjustments based on product and user insights</li>
+    <li>Final polish for developer-ready handoff</li>
   </ul>
 
   <img src="images/process.png" alt="Design process timeline">
 </section>
 
+<!-- SCREENS -->
 <section id="screens">
-  <h2>Key Screens</h2>
+  <h2>Key Screens Designed</h2>
 
   <h3>Authentication</h3>
+  <ul>
+    <li>SMS login</li>
+    <li>Magic link login</li>
+  </ul>
   <img src="images/login.png" alt="Login screens">
 
   <h3>Chat & Communication</h3>
+  <ul>
+    <li>Clear message hierarchy</li>
+    <li>Task and event cards inside chat</li>
+    <li>Predictable interaction behavior</li>
+  </ul>
   <img src="images/chat.png" alt="Chat screens">
 
   <h3>Tasks & Events</h3>
-  <img src="images/tasks.png" alt="Task screens">
+  <ul>
+    <li>Visual task states</li>
+    <li>Accept / Reject / Complete logic</li>
+    <li>No duplicate actions leading to same result</li>
+  </ul>
+  <img src="images/tasks.png" alt="Task flow screens">
 
   <h3>Files</h3>
   <ul>
     <li>Clear download affordances</li>
     <li>Consistent long-press interactions</li>
   </ul>
-  <img src="images/files.png" alt="File screens">
+  <img src="images/files.png" alt="File management screens">
 
   <h3>Profile</h3>
+  <ul>
+    <li>Clear information grouping</li>
+    <li>Improved visual separation</li>
+  </ul>
   <img src="images/profile.png" alt="Profile screen">
 </section>
 
+<!-- OUTCOME -->
 <section id="outcome">
   <h2>Outcome & Impact</h2>
   <ul>
-    <li>Improved clarity across task and event states</li>
-    <li>Reduced login confusion</li>
-    <li>More predictable interactions</li>
-    <li>Cleaner UI aligned with real behavior</li>
+    <li>Improved clarity across all task and event states</li>
+    <li>Reduced user confusion in login flows</li>
+    <li>More predictable and accessible interactions</li>
+    <li>Cleaner UI aligned with real user behavior</li>
   </ul>
 
   <h2>Learnings</h2>
   <ul>
-    <li>Real issues appear only in live testing</li>
-    <li>Small wording changes prevent major confusion</li>
-    <li>Consistency builds trust</li>
-    <li>Designing for social impact requires empathy</li>
+    <li>Real usability issues appear only in live testing</li>
+    <li>Small wording changes can prevent major confusion</li>
+    <li>Consistency builds trust especially for vulnerable users</li>
+    <li>Designing for social impact requires extra empathy</li>
   </ul>
 </section>
 
@@ -195,3 +259,4 @@
 
 </body>
 </html>
+
