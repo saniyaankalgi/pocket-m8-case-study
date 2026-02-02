@@ -1,119 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-.smooth-scroll {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  color: #111;
   background: #ffffff;
-  color: #000000;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
-nav {
-  position: fixed;
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
   top: 0;
-  width: 100%;
-  height: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 64px;
   background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #eee;
   z-index: 1000;
 }
 
-.nav-left {
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
   font-weight: 600;
 }
 
-nav a {
-  margin-left: 32px;
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
   text-decoration: none;
-  color: #000;
+  color: #333;
   font-size: 14px;
-  opacity: 0.7;
 }
 
-nav a:hover {
-  opacity: 1;
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
 }
 
-main {
-  margin-top: 120px;
+/* ================= HERO ================= */
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 96px 24px 72px;
 }
 
-section {
-  max-width: 960px;
-  margin: 120px auto;
-  padding: 0 24px;
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
 }
 
-section.full {
-  max-width: 1200px;
+.hero-subtitle {
+  font-size: 18px;
+  color: #555;
 }
 
-h1 {
-  font-size: 40px;
-  margin-bottom: 24px;
+.hero-meta {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.section-alt {
+  background: #f7f8fa;
 }
 
 h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 
 h3 {
-  font-size: 18px;
-  margin: 40px 0 16px;
-}
-
-p {
-  max-width: 720px;
-  margin-bottom: 16px;
-}
-
-ul {
-  margin: 16px 0 0 20px;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.meta {
-  color: #666;
-  margin-bottom: 32px;
-}
-
-img {
-  width: 100%;
+  font-size: 20px;
   margin-top: 40px;
 }
 
-footer {
-  border-top: 1px solid #e5e5e5;
-  padding: 48px;
+ul {
+  padding-left: 20px;
+}
+
+.case-image {
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ================= FOOTER ================= */
+.footer {
   text-align: center;
+  padding: 40px;
+  font-size: 14px;
   color: #666;
 }
 
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
-  nav {
-    padding: 0 24px;
+  .menu-toggle {
+    display: block;
   }
 
-  h1 {
-    font-size: 32px;
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    display: none;
+    border-bottom: 1px solid #eee;
   }
 
-  h2 {
-    font-size: 24px;
+  .nav-links a {
+    padding: 16px 24px;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-meta {
+    flex-direction: column;
+    gap: 8px;
   }
 }
+
