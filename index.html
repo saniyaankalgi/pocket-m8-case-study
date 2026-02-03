@@ -3,180 +3,290 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pocket M8 – End-to-End UX Case Study</title>
+  <title>PocketM8 – End-to-End UX Case Study</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- ================= NAV ================= -->
+<!-- ================= NAV BAR ================= -->
 <header class="navbar">
   <div class="nav-container">
-    <div class="logo">Pocket M8</div>
+    <div class="logo">PocketM8</div>
     <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
     <nav class="nav-links">
       <a href="#overview">Overview</a>
-      <a href="#research">Research</a>
-      <a href="#design">Design</a>
-      <a href="#outcomes">Outcomes</a>
+      <a href="#process">Process</a>
+      <a href="#outcome">Outcome</a>
     </nav>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <h1>Pocket M8</h1>
-  <p class="hero-subtitle">End-to-End UX Case Study · Sozial Digital</p>
+<!-- ================= OVERVIEW ================= -->
+<section id="overview" class="hero">
+  <h1>PocketM8</h1>
+  <p class="hero-subtitle">
+    Designing a Client–Social Worker Communication App for a Switzerland-Based Organization
+  </p>
 
-  <!-- HERO IMAGE -->
-  <img src="images/cover.png" class="case-image" alt="Pocket M8 cover" />
+  <!-- Image Slot 1 – Cover Image -->
+  <img src="images/cover.png" class="case-image" alt="PocketM8 cover image" />
 
-  <div class="hero-meta">
-    <span>Role: UX/UI Designer</span>
-    <span>Platform: Mobile App</span>
-    <span>Type: Live Product Redesign</span>
-  </div>
-</section>
-
-<!-- ================= PROJECT OVERVIEW ================= -->
-<section id="overview" class="section">
   <h2>Project Overview</h2>
   <p>
-    Pocket M8 is a digital social-support platform designed to help users manage
-    tasks, events, and communication in sensitive and trust-driven contexts.
+    PocketM8 is a mobile application designed for clients of social workers to communicate,
+    receive tasks, manage events, and share files in a safe and structured way.
   </p>
   <p>
-    The product was already live but suffered from unclear flows, weak feedback
-    states, and high cognitive load.
+    The product is owned by Sozial Digital, a Switzerland based company serving German
+    speaking users.
   </p>
-</section>
+  <p>
+    The project involved redesigning and refining an existing app, improving usability,
+    reducing confusion, and making the experience intuitive for users with varying levels
+    of digital literacy.
+  </p>
 
-<!-- ================= PROBLEM STATEMENT ================= -->
-<section class="section section-alt">
+  <p><strong>My Role:</strong> UX/UI Designer</p>
+  <p><strong>Duration:</strong> Initial Design + 5-day Usability & Iteration Cycle</p>
+  <p><strong>Platform:</strong> Mobile App (Client Side)</p>
+  <p><strong>Target Users:</strong> Clients of social workers (German speaking, Switzerland)</p>
+
   <h2>Problem Statement</h2>
 
-  <!-- PROBLEM IMAGE -->
-  <img src="images/problem.png" class="case-image" alt="Problem overview" />
-
-  <ul>
-    <li>Unclear onboarding and entry points</li>
-    <li>Confusing task vs event creation</li>
-    <li>Silent messaging failures</li>
-    <li>Overloaded dashboards</li>
-    <li>Lack of emotional feedback</li>
-  </ul>
-</section>
-
-<!-- ================= RESEARCH ================= -->
-<section id="research" class="section">
-  <h2>Research & Discovery</h2>
+  <!-- Image Slot 2 – Problem Highlights -->
+  <img src="images/problem.png" class="case-image" alt="Problem highlights" />
 
   <p>
-    Research relied on live product testing, stakeholder feedback, and heuristic
-    audits rather than formal interviews.
+    The existing PocketM8 app functioned well technically, but usability gaps became evident
+    after real world usage:
+  </p>
+  <ul>
+    <li>Multiple login methods caused role confusion (clients vs mentors)</li>
+    <li>Task and event states were not visually clear</li>
+    <li>File interactions lacked clarity (download behavior)</li>
+    <li>Interaction patterns (long press actions, confirmations) were inconsistent</li>
+    <li>Dense layouts reduced readability for non tech savvy users</li>
+  </ul>
+  <p>
+    Because the app is used by clients who may already be under cognitive or emotional load,
+    clarity and predictability were critical.
   </p>
 
-  <!-- RESEARCH IMAGE -->
-  <img src="images/research.png" class="case-image" alt="Research insights" />
+  <h2>Users & Context</h2>
 
-  <h3>Users & Context</h3>
-
-  <!-- USERS IMAGE -->
+  <!-- Image Slot 3 – User Context Visual -->
   <img src="images/users.png" class="case-image" alt="User context" />
 
+  <h3>Target Audience</h3>
   <ul>
     <li>Clients working with social workers</li>
-    <li>German-speaking users</li>
+    <li>German speaking users</li>
     <li>Mixed digital literacy levels</li>
-    <li>Often interacting under stress</li>
+    <li>Often interacting with tasks related to health, administration, or daily life</li>
+  </ul>
+
+  <h3>Usage Context</h3>
+  <ul>
+    <li>High importance of clarity and trust</li>
+    <li>Users may open the app under stress</li>
+    <li>Actions like accepting or rejecting tasks must feel safe and reversible</li>
   </ul>
 </section>
 
-<!-- ================= DESIGN PROCESS ================= -->
-<section id="design" class="section section-alt">
-  <h2>Design Process</h2>
+<!-- ================= PROCESS ================= -->
+<section id="process" class="section section-alt">
+  <h2>Research & Discovery</h2>
 
-  <!-- PROCESS IMAGE -->
-  <img src="images/process.png" class="case-image" alt="Design process" />
+  <!-- Image Slot 4 – Research Artifacts -->
+  <img src="images/research.png" class="case-image" alt="Research artifacts" />
+
+  <h3>Sources of Insight</h3>
+  <ul>
+    <li>Existing wireframes and rough specifications</li>
+    <li>Review of live app behavior</li>
+    <li>Hands-on testing using real flows</li>
+    <li>Direct feedback from the product team</li>
+    <li>Observations from real usage scenarios</li>
+  </ul>
 
   <p>
-    The redesign followed an iterative loop of testing, redesigning, and
-    validating changes against real constraints.
+    Rather than theoretical research, this project relied on practical usability testing,
+    which was crucial given the sensitivity of the user base.
   </p>
 
-  <!-- TESTING IMAGE -->
-  <img src="images/testing.png" class="case-image" alt="Testing and iteration" />
-</section>
+  <h2>Usability Testing (Live App)</h2>
 
-<!-- ================= KEY SCREENS ================= -->
-<section class="section">
+  <!-- Image Slot 5 – Testing Flow -->
+  <img src="images/testing.png" class="case-image" alt="Testing flow" />
+
+  <p>I tested the live production app by simulating both roles:</p>
+  <ul>
+    <li>Social worker (web app)</li>
+    <li>Client (mobile app)</li>
+  </ul>
+
+  <h3>Tested Flows</h3>
+  <ul>
+    <li>SMS login</li>
+    <li>Email login</li>
+    <li>Magic link login</li>
+    <li>Messaging</li>
+    <li>Tasks & events (accept, reject, complete)</li>
+    <li>File upload/download</li>
+    <li>Profile & avatar editing</li>
+  </ul>
+
+  <p>
+    This revealed real interaction friction that could not be identified in wireframes alone.
+  </p>
+
+  <h2>Key Usability Issues Identified</h2>
+
+  <ol>
+    <li>
+      <strong>Login Confusion</strong><br />
+      Clients saw “Login with Email”, even though this was only for mentors.<br />
+      <strong>Fix:</strong> Rename CTA to “Login for Mentors” to prevent misinterpretation.
+    </li>
+    <li>
+      <strong>Task & Event States</strong><br />
+      Rejected events were shown with strikethrough text, which felt harsh and unclear.<br />
+      <strong>Fix:</strong>
+      <ul>
+        <li>Accepted → green visual state</li>
+        <li>Rejected → red icon background</li>
+        <li>Completed → clear confirmation state</li>
+      </ul>
+    </li>
+    <li>
+      <strong>File Download Clarity</strong><br />
+      Users could tap files, but the action was unclear and feedback disappeared too quickly.<br />
+      <strong>Fix:</strong>
+      <ul>
+        <li>Explicit download icon on file cards</li>
+        <li>Clear affordance for tap behavior</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Interaction Consistency (Long Press)</strong><br />
+      Long-press actions triggered confirmations inconsistently.<br />
+      <strong>Fix:</strong>
+      <ul>
+        <li>Unified confirmation dialog design</li>
+        <li>Same interaction logic for messages and files</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Design Principles Applied</h2>
+  <ul>
+    <li>Clarity over cleverness</li>
+    <li>One action = one outcome</li>
+    <li>Consistent interaction patterns</li>
+    <li>Low cognitive load</li>
+    <li>Accessible visual hierarchy</li>
+  </ul>
+
+  <h2>Design Process</h2>
+
+  <!-- Image Slot 7 – Design Process Timeline -->
+  <img src="images/process.png" class="case-image" alt="Design process timeline" />
+
+  <h3>Step 1: Testing & Documentation</h3>
+  <ul>
+    <li>Tested all major flows</li>
+    <li>Documented friction points directly in Figma</li>
+    <li>Flagged UX vs technical issues</li>
+  </ul>
+
+  <h3>Step 2: Refinement & Redesign</h3>
+  <ul>
+    <li>Improved layouts, spacing, and alignment</li>
+    <li>Introduced consistent card patterns</li>
+    <li>Refined micro interactions</li>
+    <li>Reduced ambiguity in states and actions</li>
+  </ul>
+
+  <h3>Step 3: Feedback & Iteration</h3>
+  <ul>
+    <li>Two rounds of structured feedback</li>
+    <li>Adjustments based on product and user insights</li>
+    <li>Final polish for developer-ready handoff</li>
+  </ul>
+
   <h2>Key Screens Designed</h2>
 
-  <h3>Authentication & Role Clarity</h3>
-  <img src="images/login.png" class="case-image" alt="Login flow" />
+  <h3>Authentication</h3>
+  <ul>
+    <li>SMS login</li>
+    <li>Magic link login</li>
+  </ul>
+  <img src="images/login.png" class="case-image" alt="Login screens" />
 
-  <h3>Task & Event Management</h3>
-  <img src="images/tasks.png" class="case-image" alt="Tasks flow" />
+  <h3>Chat & Communication</h3>
+  <ul>
+    <li>Clear message hierarchy</li>
+    <li>Task and event cards inside chat</li>
+    <li>Predictable interaction behavior</li>
+  </ul>
+  <img src="images/chat.png" class="case-image" alt="Chat screens" />
 
-  <h3>Messaging</h3>
-  <img src="images/chat.png" class="case-image" alt="Chat flow" />
+  <h3>Tasks & Events</h3>
+  <ul>
+    <li>Visual task states</li>
+    <li>Accept / Reject / Complete logic</li>
+    <li>No duplicate actions leading to same result</li>
+  </ul>
+  <img src="images/tasks.png" class="case-image" alt="Task flow screens" />
 
-  <h3>File Sharing</h3>
-  <img src="images/files.png" class="case-image" alt="File management" />
+  <h3>Files</h3>
+  <ul>
+    <li>Clear download affordances</li>
+    <li>Consistent long-press interactions</li>
+  </ul>
+  <img src="images/files.png" class="case-image" alt="File management screens" />
 
-  <h3>User Profile</h3>
+  <h3>Profile</h3>
+  <ul>
+    <li>Clear information grouping</li>
+    <li>Improved visual separation</li>
+  </ul>
   <img src="images/profile.png" class="case-image" alt="Profile screen" />
 </section>
 
-<!-- ================= OUTCOMES ================= -->
-<section id="outcomes" class="section section-alt">
-  <h2>Outcomes & Impact</h2>
+<!-- ================= OUTCOME ================= -->
+<section id="outcome" class="section">
+  <h2>Outcome & Impact</h2>
   <ul>
-    <li>Improved clarity across core workflows</li>
-    <li>Reduced user hesitation</li>
-    <li>Stronger trust through explicit feedback</li>
-    <li>Positive stakeholder validation</li>
+    <li>Improved clarity across all task and event states</li>
+    <li>Reduced user confusion in login flows</li>
+    <li>More predictable and accessible interactions</li>
+    <li>Cleaner UI aligned with real user behavior</li>
   </ul>
-</section>
 
-<!-- ================= LEARNINGS ================= -->
-<section class="section">
+  <p>
+    The final result was a developer ready Figma file with structured components,
+    clear states, and documented interactions.
+  </p>
+
   <h2>Learnings</h2>
   <ul>
-    <li>Silent failures damage trust</li>
-    <li>Consistency builds confidence</li>
-    <li>UX in sensitive domains needs empathy</li>
+    <li>Real usability issues appear only in live testing</li>
+    <li>Small wording changes can prevent major confusion</li>
+    <li>Consistency builds trust especially for vulnerable users</li>
+    <li>Designing for social impact requires extra empathy</li>
   </ul>
-</section>
-
-<!-- ================= FUTURE ================= -->
-<section class="section section-alt">
-  <h2>Future Improvements</h2>
-  <ul>
-    <li>Formal usability testing</li>
-    <li>Accessibility audits</li>
-    <li>UX metrics</li>
-    <li>Design system documentation</li>
-  </ul>
-</section>
-
-<!-- ================= FINAL NOTE ================= -->
-<section class="section">
-  <h2>Final Note</h2>
-  <p>
-    This project strengthened my ability to design responsibly for real users,
-    work within constraints, and prioritise emotional clarity alongside
-    usability.
-  </p>
 </section>
 
 <footer class="footer">
-  <p>© Pocket M8 UX Case Study · Designed by Saniya</p>
+  <p>© PocketM8 UX Case Study</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
